@@ -1,4 +1,3 @@
-// Code your design here
 `timescale 1ns / 1ns
 
 module top(input [31:0] op_a,
