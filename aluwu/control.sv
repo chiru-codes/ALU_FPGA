@@ -55,9 +55,9 @@ module control(
       // Wait until selected unit finishes
       EXEC:
         case(op_code)
-            3'b000, 3'b001: if (done_add) next_state = DONE; // ADD/SUB
-            3'b010:         if (done_mul) next_state = DONE; // MUL
-            3'b011:         if (done_div) next_state = DONE; // DIV
+            3'b000, 3'b001: if (done_add) next_state = DONE;
+            3'b010:         if (done_mul) next_state = DONE;
+            3'b011:         if (done_div) next_state = DONE;
             default:        next_state = DONE;
           endcase
 	  
